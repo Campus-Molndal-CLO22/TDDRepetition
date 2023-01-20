@@ -12,7 +12,7 @@ public class CarTests
 	{
 		testCar = new()
 		{
-			Model = "Saab", // Saab istället för volvo
+			Model = "Saab",
 			Speed = 100,
 			SpeedRatio=10
 		};
