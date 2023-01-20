@@ -14,7 +14,7 @@ public class CarTests
 		{
 			Model = "Saab",
 			Speed = 100,
-			SpeedRatio=10
+			SpeedRatio=3
 		};
 	}
 
