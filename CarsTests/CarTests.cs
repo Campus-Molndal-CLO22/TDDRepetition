@@ -92,4 +92,12 @@ public class CarTests
 		// Assert
 		Assert.AreEqual(expected, actual);
 	}
+
+	[TestMethod()]
+	public void DecreaseSpeedTest_minimal_och_ful_kod()
+	{
+		testCar.DecreaseSpeed(45);
+		Assert.AreEqual(45, testCar.Speed);
+	}
+
 }
