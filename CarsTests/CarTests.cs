@@ -12,7 +12,7 @@ public class CarTests
 	{
 		testCar = new()
 		{
-			Model = "Volvo",
+			Model = "Saab",
 			Speed = 100,
 			SpeedRatio=10
 		};
