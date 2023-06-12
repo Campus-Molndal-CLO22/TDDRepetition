@@ -6,24 +6,35 @@ namespace Cars.Tests;
 [TestClass()]
 public class CarTests
 {
-	Car testCar;
-	[TestInitialize] // Det ska köras innan varje test
-	public void Setup()
-	{
-		testCar = new()
-		{
-			Model = "Saab",
-			Speed = 100,
-			SpeedRatio=10
-		};
-	}
+//This line creates a variable named "testCar" that is an instance of the "Car" class.
+Car? testCar;
+
+//This line is an attribute that indicates that the method "Setup()" should be run before each test in the program.
+[TestInitialize] 
+
+//This line creates the method "Setup()" which will initialize the "testCar" variable with certain values.
+public void Setup()
+{
+    //This line creates a new instance of the "Car" class and assigns it to the "testCar" variable.
+    testCar = new()
+    {
+        //This line sets the "Model" property of the "testCar" object to the string "Saab".
+        Model = "Saab",
+
+        //This line sets the "Speed" property of the "testCar" object to the value 100.
+        Speed = 100,
+
+        //This line sets the "SpeedRatio" property of the "testCar" object to the value 10.
+        SpeedRatio=10
+    };
+}
 
 
 	[TestMethod()]
 	public void AccelerateTest()
 	{
-		// Arrange
-		int expected = 110;
+        // Arrange
+        int expected = 110;
 		// Act
 		testCar.Accelerate();
 		var actual = testCar.Speed;
